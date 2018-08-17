@@ -1,0 +1,258 @@
+body {
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/swirl_pattern.png");
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  line-height: 150%;
+}
+
+header{
+  background-color: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  padding: 30px 0px;
+}
+
+.headerText{
+  width: 1000px;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.headerBox{
+  background-color: #4aaaa5;
+  display: inline;
+  padding: 30px;
+}
+
+h1{
+  color: #ffffff;
+}
+
+h2{
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+nav{
+  float: right;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  color: #4aaaa5;
+}
+
+nav a:link {
+  color: #777777;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #777777;
+}
+
+nav a:hover, a:hover{
+  color: #4aaaa5;
+}
+
+nav a:active, a:active{
+  color: green;
+}
+
+hr{
+  height: 2px;
+  background-color: #dddddd;
+  border: none;
+}
+
+section{
+  clear: both;
+  width: 960px;
+  padding: 20px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  background-color: #666666;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  padding: 20px 0 20px 0;
+  border-top: 7px solid #4aaaa5;
+  height: 20px;
+}
+
+/*ABOUT*/
+.profileImage{
+  width: 150px;
+  height: 210px;
+  float: left;
+  margin: 10px 10px 10px 0px;
+}
+
+/*CONTACT PAGE*/
+#name, #email{
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+  background-color:#4aaaa5;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+form{
+  margin-top: 25px;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+}
+
+/*PORTFOLIO PAGE*/
+.flexContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolioImageContainer{
+  margin: 25px 40px 25px 0px;
+  position: relative;
+  text-align: center;
+  color:#ffffff;
+  box-sizing: border-box;
+  flex: 40%;
+  max-width: 40%;
+}
+
+.portfolioImageBanner{
+  box-sizing: border-box;
+  position: absolute; 
+  width: 100%;
+  bottom: 15px; 
+  left: 0; 
+  padding: 20px;
+  background-color: #4aaaa5
+}
+
+.portfolioImageContainer img{
+  width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 980px) {
+  header{
+    padding-left: 50px;
+  }
+
+  .headerText{
+    width: 100%;
+  }
+
+  section{
+    width: 71%;
+    float: left;
+    margin-left: 50px;
+  }
+
+  nav{
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header{
+    padding-left: 30px;
+  }
+
+  section{
+    width: 87%;
+    margin-left: 30px;
+  }
+
+  nav{
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  section{
+    margin-left: 20px;
+  }
+
+  .headerBox{
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .headerText{
+    text-align: center;
+  }
+
+  header{
+    display: block;
+    padding-top: 0;
+    padding-left: 0;
+    padding: 0;
+  }
+
+  nav{
+    float: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .profileImage{
+    display: block;
+    width: 300px;
+    height: 420px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexContainer{
+    flex-direction: column;
+  }
+
+  .portfolioImageBanner{
+
+  }
+
+  .portfolioImageContainer{
+    flex: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
