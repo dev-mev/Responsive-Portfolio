@@ -104,7 +104,7 @@ footer{
 }
 
 /*CONTACT PAGE*/
-#name, #email{
+input[type=text]{
   width: 100%;
   padding: 12px 12px;
   margin: 8px 0;
@@ -179,14 +179,20 @@ label{
     width: 100%;
   }
 
+  nav{
+    padding-right: 20px;
+  }
+
   section{
-    width: 71%;
+    width: 60%;
     float: left;
     margin-left: 50px;
   }
 
-  nav{
-    padding-right: 20px;
+  .portfolioImageContainer{
+    margin:20px 14px 20px 14px;
+    flex: 45%;
+    max-width: 45%;
   }
 }
 
@@ -195,13 +201,13 @@ label{
     padding-left: 30px;
   }
 
+  nav{
+    padding-right: 30px;
+  }
+
   section{
     width: 87%;
     margin-left: 30px;
-  }
-
-  nav{
-    padding-right: 50px;
   }
 }
 
@@ -244,15 +250,12 @@ label{
 
   .flexContainer{
     flex-direction: column;
-  }
-
-  .portfolioImageBanner{
-
+    flex-wrap: inherit;
   }
 
   .portfolioImageContainer{
     flex: 100%;
     max-width: 100%;
-    margin: 0;
+    margin: 20px 0;
   }
 }
