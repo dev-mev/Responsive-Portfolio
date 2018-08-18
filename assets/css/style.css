@@ -151,8 +151,6 @@ label{
   text-align: center;
   color:#ffffff;
   box-sizing: border-box;
-  flex: 40%;
-  max-width: 40%;
 }
 
 .portfolioImageBanner{
@@ -184,15 +182,15 @@ label{
   }
 
   section{
-    width: 60%;
+    width: 71%;
     float: left;
     margin-left: 50px;
   }
 
   .portfolioImageContainer{
     margin:20px 14px 20px 14px;
-    flex: 45%;
-    max-width: 45%;
+    flex: 44%;
+    max-width: 44%;
   }
 }
 
